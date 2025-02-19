@@ -28,7 +28,7 @@
           run: python weather_script.py # 파이썬 스크립트를 실행해라
         - name: 변경 사항 커밋 및 푸쉬
           run:
-            git config -- global user.name "github-actions[bot]"
+            git config --global user.name "github-actions[bot]"
             git config --global user.email "github-actions@github.com"
             git add seoul_weather.csv # 날씨 데이터 저장 csv를 github에 추가
             git commit -m "Update weather data (auto)" # 변경사항이 있을 경우
